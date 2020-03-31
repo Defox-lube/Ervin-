@@ -17,6 +17,8 @@ namespace Homework2
             Console.WriteLine("\t2 - Минус");
             Console.WriteLine("\t3 - Умножить");
             Console.WriteLine("\t4 - Делить");
+            Console.WriteLine("\t5 - Остаток");
+            Console.WriteLine("\t6 - Степень");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -30,6 +32,12 @@ namespace Homework2
                     break;
                 case "4":
                     Console.WriteLine($"Деление равно {(a / b)}");
+                    break;
+                    case "5":
+                    Console.WriteLine($"Остаток равен {(a % b)}");
+                    break;
+                case "6":
+                    Console.WriteLine($"Степень равна {Math.Pow(a, b)}");
                     break;
             }
             Console.Write("Закрой меня =)");
